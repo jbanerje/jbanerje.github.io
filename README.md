@@ -1,5 +1,4 @@
-# Principal Data Scientist
-[Data Science Blog](https://medium.com/@jagannath.banerjee) | [linkedin](https://www.linkedin.com/in/jagannath-banerjee/)
+# Principal Data Scientist | Data Science Career Coach
 
 #### Technical Skills: 
 Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
