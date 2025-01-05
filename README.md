@@ -1,15 +1,12 @@
 ## Technical Skills: 
 Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
 
-## Education							       		
 ## Education
 
-## Education
-
-- Master of Science, Analytics         | Georgia Tech  
-- Bachelor of Science, Electronics     | SMIT  
-- Machine Learning Specialization      | Coursera  
-- Deep Learning Specialization         | Coursera
+- Master of Science in Analytics, Georgia Institute of Technology
+- Bachelor of Science in Electronics, Sikkim Manipal Instittute of Technology
+- Machine Learning Specialization, Coursera
+- Deep Learning Specialization, Coursera
 
 ## Work Experience
 **Principal Data Scientist @ Stryker Corp (_March 2022 - Present_)**
