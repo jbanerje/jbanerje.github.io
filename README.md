@@ -1,55 +1,43 @@
 # Data Scientist
 
-#### Technical Skills: Python, SQL, AWS, Snowflake, MATLAB
+#### Technical Skills: Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
 
-## Education
-- Ph.D., Physics | The University of Texas at Dallas (_May 2022_)								       		
-- M.S., Physics	| The University of Texas at Dallas (_December 2019_)	 			        		
-- B.S., Physics | The University of Texas at Dallas (_May 2017_)
+## Education							       		
+- Master of Science, Analytics	| Georgia, USA  (_May 2025_)	 			        		
+- Bachelor of Science, Electronics | Sikkim, India (_May 2007_)
 
 ## Work Experience
-**Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-- Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
+**Principal Data Scientist @ Stryker Corp (_March 2022 - Present_)**
+ - Currently leading a data science team in the development of an end-to-end AI-based demand planning system using Azure Infrastructure.
+ - Implemented a Customer Recommendation \& Product Association application across multiple divisions, enhancing customer purchasing behavior insights and enabling personalized recommendations, resulting in increased cross-selling of products.
+ - Developed proof of concepts for customizing Product GPT for multiple divisions using Azure Open AI GPT 3.5, providing tangible demonstrations of feasibility and potential impact on various business areas.
 
-**Data Science Consultant @ Shawhin Talebi Ventures LLC (_December 2020 - Present_)**
-- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+**Lead Data Scientist @ Medline Industries (_March 2019 - March 2022)**
+ - Established and led the Data Science team, constructing Machine Learning and Cloud Infrastructure, and expanding it to a 4-member team.
+ - Developed a smart demand forecasting system for inventory management, reducing forecasting error from 67\% to 32\% and generating yearly savings of over \$12 million in excess inventory.
+ - Engineered a smart warehouse inventory audit application utilizing a Random Forest model, leading to weekly inventory adjustments worth \$50,000+ across 5 warehouses. Currently scaling the application for 54 branches, with an estimated savings projection of \$4 million.
+ - Implemented a real-time pricing enquiry application utilized by 40+ salesmen, resulting in the conversion of 19 customers from competitors with a 1-year contract valued at \$10 million.
+
+**Sr Associate/Lead Data Scientist @ Cognizant (_Dec 2007 - Mar 2019)**
+ - Established and led a 7-member data science team that successfully delivered end-to-end data science applications.
+ - Developed the Transaction Settlement Analytics tool, utilizing Decision Tree Regressor to predict merchant funding and saving \$2 million in SLA fines over a span of 2 years.
+ - Orchestrated the architecture and implementation of the Google and Samsung Pay application for a client with a 40-member team over 8 months, resulting in an annual combined revenue of over \$70 million.
+ - Constructed a real-time credit line increase decision engine application using Random Forest Regressor and Classifier, facilitating instant approval decisions and amounts, leading to significant time savings compared to the previous 3-5 business day processing time.
 
 ## Projects
-### Data-Driven EEG Band Discovery with Decision Trees
+### Ryanair Passenger Reviews Analysis
 [Publication](https://www.mdpi.com/1424-8220/22/8/3048)
 
-Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
+In the rapidly growing aviation industry, analyzing customer feedback is critical for improving service quality and customer experience. This project focuses on leveraging Natural Language Processing (NLP) techniques to analyze Ryanair passenger reviews from 2012 to 2024. By employing sentiment analysis, topic modeling, and root cause analysis, the study identifies key areas of satisfaction and dissatisfaction, highlights operational challenges, and pinpoints routes with recurring issues. A custom machine learning-based sentiment classifier is developed to automate sentiment categorization, and innovative graph network visualizations are used to trace negative sentiments back to specific routes. This analysis aims to provide actionable insights to enhance Ryanair’s operational and customer service strategies.
 
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
-
-### Decoding Physical and Cognitive Impacts of Particulate Matter Concentrations at Ultra-Fine Scales
+### Amazon Product Bundling and Recommendation
 [Publication](https://www.mdpi.com/1424-8220/22/11/4240)
 
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
+The objective of this project is to conduct a comprehensive analysis of Amazon sales data to gain valuable insights into sales trends, customer purchase behavior, and other factors influencing profitability. Leveraging various data mining techniques such as exploratory data analysis, clustering, association mining, and predictive modeling, we aim to extract meaningful patterns and relationships to build a product bundling strategy and recommend focused products to customers. By delving into multifaceted dimensions such as product categories, geographical distributions, and sales performance metrics, this analysis will furnish actionable insights to refine sales strategies and augment overall profitability.
 
-![Bike Study](/assets/img/bike_study.jpeg)
+### IntelliFraud: Bank Account Fraud Detection
+[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
 
-## Talks & Lectures
-- Causality: The new science of an old question - GSP Seminar, Fall 2021
-- Guest Lecture: Dimensionality Reduction - Big Data and Machine Learning for Scientific Discovery (PHYS 5336), Spring 2021
-- Guest Lecture: Fourier and Wavelet Transforms - Scientific Computing (PHYS 5315), Fall 2020
-- A Brief Introduction to Optimization - GSP Seminar, Fall 2019
-- Weeks of Welcome Poster Competition - UTD, Fall 2019
-- A Brief Introduction to Networks - GSP Seminar, Spring 2019
+IntelliFraud is an innovative online tool designed to enhance the detection of fraudulent bank account applications. It features an intuitive dashboard for exploring statistical data, dynamic graph network analysis to visualize and analyze transaction flows, and advanced machine learning techniques like Voting and Stacking Classifiers for fraud detection. The tool provides four key functionalities: exploratory data analysis (EDA) across customizable datasets, fraud network analysis for transaction visualization, model evaluation to assess classification metrics and identify optimal models, and an inference interface to analyze fraud cases and understand model decisions using SHAP and ELI5. IntelliFraud empowers users with actionable insights to improve fraud detection strategies effectively.
 
-- [Data Science YouTube](https://www.youtube.com/channel/UCa9gErQ9AE5jT2DZLjXBIdA)
-
-## Publications
-1. Talebi S., Lary D.J., Wijeratne L. OH., and Lary, T. Modeling Autonomic Pupillary Responses from External Stimuli Using Machine Learning (2019). DOI: 10.26717/BJSTR.2019.20.003446
-2. Wijeratne, L.O.; Kiv, D.R.; Aker, A.R.; Talebi, S.; Lary, D.J. Using Machine Learning for the Calibration of Airborne Particulate Sensors. Sensors 2020, 20, 99.
-3. Lary, D.J.; Schaefer, D.; Waczak, J.; Aker, A.; Barbosa, A.; Wijeratne, L.O.H.; Talebi, S.; Fernando, B.; Sadler, J.; Lary, T.; Lary, M.D. Autonomous Learning of New Environments with a Robotic Team Employing Hyper-Spectral Remote Sensing, Comprehensive In-Situ Sensing and Machine Learning. Sensors 2021, 21, 2240. https://doi.org/10.3390/s21062240
-4. Zhang, Y.; Wijeratne, L.O.H.; Talebi, S.; Lary, D.J. Machine Learning for Light Sensor Calibration. Sensors 2021, 21, 6259. https://doi.org/10.3390/s21186259
-5. Talebi, S.; Waczak, J.; Fernando, B.; Sridhar, A.; Lary, D.J. Data-Driven EEG Band Discovery with Decision Trees. Preprints 2022, 2022030145 (doi: 10.20944/preprints202203.0145.v1).
-6. Fernando, B.A.; Sridhar, A.; Talebi, S.; Waczak, J.; Lary, D.J. Unsupervised Blink Detection Using Eye Aspect Ratio Values. Preprints 2022, 2022030200 (doi: 10.20944/preprints202203.0200.v1).
-7. Talebi, S. et al. Decoding Physical and Cognitive Impacts of PM Concentrations at Ultra-fine Scales, 29 March 2022, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-1499191/v1]
-8. Lary, D.J. et al. (2022). Machine Learning, Big Data, and Spatial Tools: A Combination to Reveal Complex Facts That Impact Environmental Health. In: Faruque, F.S. (eds) Geospatial Technology for Human Well-Being and Health. Springer, Cham. https://doi.org/10.1007/978-3-030-71377-5_12
-9. Wijerante, L.O.H. et al. (2022). Advancement in Airborne Particulate Estimation Using Machine Learning. In: Faruque, F.S. (eds) Geospatial Technology for Human Well-Being and Health. Springer, Cham. https://doi.org/10.1007/978-3-030-71377-5_13
-
-- [Data Science Blog](https://medium.com/@shawhin)
+- [Data Science Blog](https://medium.com/@jagannath.banerjee)
