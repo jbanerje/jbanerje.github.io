@@ -1,10 +1,12 @@
-# Data Scientist
+# Principal Data Scientist
+[Data Science Blog](https://medium.com/@jagannath.banerjee) [linkedin](https://www.linkedin.com/in/jagannath-banerjee/)
 
-#### Technical Skills: Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
+#### Technical Skills: 
+Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
 
 ## Education							       		
-- Master of Science, Analytics	| Georgia, USA  (_May 2025_)	 			        		
-- Bachelor of Science, Electronics | Sikkim, India (_May 2007_)
+- Master of Science, Analytics	    | Georgia, USA 			        		
+- Bachelor of Science, Electronics  | Sikkim, India
 
 ## Work Experience
 **Principal Data Scientist @ Stryker Corp (_March 2022 - Present_)**
@@ -26,18 +28,19 @@
 
 ## Projects
 ### Ryanair Passenger Reviews Analysis
-[Publication](https://www.mdpi.com/1424-8220/22/8/3048)
 
 In the rapidly growing aviation industry, analyzing customer feedback is critical for improving service quality and customer experience. This project focuses on leveraging Natural Language Processing (NLP) techniques to analyze Ryanair passenger reviews from 2012 to 2024. By employing sentiment analysis, topic modeling, and root cause analysis, the study identifies key areas of satisfaction and dissatisfaction, highlights operational challenges, and pinpoints routes with recurring issues. A custom machine learning-based sentiment classifier is developed to automate sentiment categorization, and innovative graph network visualizations are used to trace negative sentiments back to specific routes. This analysis aims to provide actionable insights to enhance Ryanair’s operational and customer service strategies.
 
+[Report](https://github.com/jbanerje/jbanerje.github.io/blob/master/projects/Ryain_Air_Passenger_Review/report_and_presentatation/Term_Project_114.pdf) [Project](https://github.com/jbanerje/jbanerje.github.io/tree/master/projects/Ryain_Air_Passenger_Review)
+
 ### Amazon Product Bundling and Recommendation
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
 
 The objective of this project is to conduct a comprehensive analysis of Amazon sales data to gain valuable insights into sales trends, customer purchase behavior, and other factors influencing profitability. Leveraging various data mining techniques such as exploratory data analysis, clustering, association mining, and predictive modeling, we aim to extract meaningful patterns and relationships to build a product bundling strategy and recommend focused products to customers. By delving into multifaceted dimensions such as product categories, geographical distributions, and sales performance metrics, this analysis will furnish actionable insights to refine sales strategies and augment overall profitability.
 
+[Report](https://github.com/jbanerje/jbanerje.github.io/blob/master/projects/Amazon_Product_Bundling/report_and_presentatation/ISYE_7406_DSML_Project_Group_115_Final_Report.pdf) [Project](https://github.com/jbanerje/jbanerje.github.io/tree/master/projects/Amazon_Product_Bundling)
+
 ### IntelliFraud: Bank Account Fraud Detection
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
 
 IntelliFraud is an innovative online tool designed to enhance the detection of fraudulent bank account applications. It features an intuitive dashboard for exploring statistical data, dynamic graph network analysis to visualize and analyze transaction flows, and advanced machine learning techniques like Voting and Stacking Classifiers for fraud detection. The tool provides four key functionalities: exploratory data analysis (EDA) across customizable datasets, fraud network analysis for transaction visualization, model evaluation to assess classification metrics and identify optimal models, and an inference interface to analyze fraud cases and understand model decisions using SHAP and ELI5. IntelliFraud empowers users with actionable insights to improve fraud detection strategies effectively.
 
-- [Data Science Blog](https://medium.com/@jagannath.banerjee)
+[Report](https://github.com/jbanerje/jbanerje.github.io/blob/master/projects/Intellifraud_Bank_Account_Fraud_Detection/final_submission_docs/team028report.pdf) [Project](https://github.com/jbanerje/jbanerje.github.io/tree/master/projects/Intellifraud_Bank_Account_Fraud_Detection)
