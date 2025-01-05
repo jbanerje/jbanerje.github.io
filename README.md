@@ -2,10 +2,10 @@
 Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
 
 ## Education							       		
-- Master of Science, Analytics	    | Georgia Instite of Technology, USA 			        		
-- Bachelor of Science, Electronics  | Sikkim Maipal Institute of Technology, India
-- Machine Learning Specialization   | Coursera, Standford
-- Deep Learning Specialization      | Coursera, Deeplearning.ai
+- Master of Science, Analytics	    | Georgia Tech			        		
+- Bachelor of Science, Electronics  | SMIT
+- Machine Learning Specialization   | Coursera
+- Deep Learning Specialization      | Coursera
 
 ## Work Experience
 **Principal Data Scientist @ Stryker Corp (_March 2022 - Present_)**
