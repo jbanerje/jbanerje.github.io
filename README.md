@@ -1,6 +1,4 @@
-# Principal Data Scientist | Data Science Career Coach
-
-#### Technical Skills: 
+## Technical Skills: 
 Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
 
 ## Education							       		
