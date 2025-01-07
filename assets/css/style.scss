@@ -12,3 +12,22 @@ header {
       text-align: left;
     }
   }
+
+.social-icons {
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 30px; /* Increase spacing between the icons */
+    padding: 20px 0; /* Optional padding for spacing */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333; /* Default icon color */
+    font-size: 2em; /* Increase icon size */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Example hover color (LinkedIn blue) */
+    transform: scale(1.2); /* Add a slight zoom effect on hover */
+}
