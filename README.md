@@ -8,9 +8,12 @@ With 15+ years of experience as a Strategic Data Science Leader, I specialize in
 ## Work Experience
 
 **Principal Data Scientist @ Stryker Corp (_March 2022 - Present_)**
- - Currently leading a data science team in the development of an end-to-end AI-based demand planning system using Azure Infrastructure.
- - Implemented a Customer Recommendation \& Product Association application across multiple divisions, enhancing customer purchasing behavior insights and enabling personalized recommendations, resulting in increased cross-selling of products.
- - Developed proof of concepts for customizing Product GPT for multiple divisions using Azure Open AI GPT 3.5, providing tangible demonstrations of feasibility and potential impact on various business areas.
+ - Partnering with senior executives to deeply understand business objectives and challenges, translating them into actionable analytic product features that drive measurable business outcomes.
+ - Building Implementation Stategy for Large Language Models (LLMs) and Agent Frameworks, setting the foundation for future-proofing LLM capabilities and driving innovation across the organization.
+ - Developing effective analytics strategies for a major marketing campaign, optimizing decision-making and measuring impact to drive customer engagement and ROI.
+ - Implementing accurate demand forecasting models, contributing to better resource allocation and strategic planning, enhancing operational efficiency.
+ - Led the development and deployment of GPT-based solutions for company policies, as well as customer recommendation and product association models across multiple divisions. 
+ - Delivered comprehensive analysis on the effectiveness of major marketing initiatives, providing actionable insights and return on investment.
 
 **Lead Data Scientist @ Medline Industries (_March 2019 - March 2022)**
  - Established and led the Data Science team, constructing Machine Learning and Cloud Infrastructure, and expanding it to a 4-member team.
