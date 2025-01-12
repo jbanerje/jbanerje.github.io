@@ -58,3 +58,20 @@ header {
 .about-me p {
     text-align: left; /* Justify text for a neat appearance */
 }
+
+/* Standout paragraph styling */
+p.highlight {
+    font-family: 'Open Sans', Arial, sans-serif; /* Use Open Sans for clean typography */
+    font-size: 18px; /* Slightly larger text for emphasis */
+    font-weight: 700; /* Bold text */
+    color: #1d3557; /* Dark navy blue for a professional look */
+    line-height: 1.8; /* Comfortable line spacing */
+    background-color: #f1faee; /* Soft light green for contrast */
+    padding: 15px 20px; /* Add padding for text spacing */
+    border-left: 6px solid #457b9d; /* Add a left accent border */
+    border-radius: 8px; /* Smooth, rounded corners */
+    margin: 20px 0; /* Add spacing above and below the paragraph */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Left-align text for readability */
+}
+
