@@ -44,3 +44,17 @@ The objective of this project is to conduct a comprehensive analysis of Amazon s
 IntelliFraud is an innovative online tool designed to enhance the detection of fraudulent bank account applications. It features an intuitive dashboard for exploring statistical data, dynamic graph network analysis to visualize and analyze transaction flows, and advanced machine learning techniques like Voting and Stacking Classifiers for fraud detection. The tool provides four key functionalities: exploratory data analysis (EDA) across customizable datasets, fraud network analysis for transaction visualization, model evaluation to assess classification metrics and identify optimal models, and an inference interface to analyze fraud cases and understand model decisions using SHAP and ELI5. IntelliFraud empowers users with actionable insights to improve fraud detection strategies effectively.
 
 [Report](https://github.com/jbanerje/jbanerje.github.io/blob/master/projects/Intellifraud_Bank_Account_Fraud_Detection/final_submission_docs/team028report.pdf) | [Project](https://github.com/jbanerje/jbanerje.github.io/tree/master/projects/Intellifraud_Bank_Account_Fraud_Detection)
+
+## Case Study
+### Optimizing cancer patient care with advanced analytics
+The Oscar Lambret Center, a premier cancer treatment and research institution in Lille, France,
+embarked on a research initiative to establish personalized care pathways for cancer patients. These
+pathways are designed to guide physicians in delivering tailored and consistent care for improved
+patient outcomes. The project aligns with the center’s mission of providing high-quality care and
+fostering multidisciplinary collaboration. By leveraging advanced analytics, the center aimed to
+consolidate siloed data and create dynamic, actionable insights to enhance care quality and operational
+efficiency. Hospital faced challenges in delivering personalized care pathways for cancer
+patients wanted to improve patient outcomes by establishing benchmarks for standard treatment
+times to prevent care delays and Optimizing workforce allocation and resource utilization for multidisciplinary
+cancer care.
+Success story has been referred from : [Oscar Lambret Center Success Story](https://www.sas.com/en_us/customers/oscar-lambret-center.html) | [Report](https://github.com/jbanerje/jbanerje.github.io/tree/master/case_studies/Optimizing cancer patient care with advanced analytics.pdf)
