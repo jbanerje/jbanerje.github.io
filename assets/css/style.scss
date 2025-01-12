@@ -92,6 +92,14 @@ p.highlight {
     margin-bottom: 10px; /* Spacing below headings */
 }
 
+/* Styling for h3 (###) headings */
+.readme-content h3 {
+    color: black; /* Black color for h3 headings */
+    font-size: 20px; /* Slightly smaller than h2 */
+    font-weight: 700; /* Bold for emphasis */
+    margin-top: 15px; /* Spacing above */
+    margin-bottom: 10px; /* Spacing below */
+}
 /* Styling for paragraph content */
 .readme-content p {
     color: black; /* Black text for content */
