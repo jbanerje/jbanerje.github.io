@@ -2,8 +2,8 @@
 With 15+ years of experience as a Strategic Data Science Leader, I specialize in leveraging AI, Machine Learning, and advanced analytics to drive business impact for Fortune 500 companies. My expertise spans forecasting, product recommendations, inventory optimization, marketing analytics, and Large Language Models (LLMs), with a proven track record of delivering high-performing solutions across industries like Cards & Payments and Healthcare Manufacturing & Supply Chain.
 
 ## Education
-M.S in Analytics, Georgia Institute of Technology
-B.S in Electronics, Sikkim Manipal Instittute of Technology
+<p>M.S in Analytics, Georgia Institute of Technology</p>
+<p>B.S in Electronics, Sikkim Manipal Institute of Technology</p>
 
 ## Work Experience
 
