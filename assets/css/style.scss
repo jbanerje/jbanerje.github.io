@@ -38,28 +38,3 @@ header {
     font-weight: normal; /* Optional: Adjust font weight */
     margin: 10px 0; /* Optional: Add spacing */
 }
-
-.about-me-section {
-    background-color: #f9f9f9; /* Light gray background for contrast */
-    padding: 40px 20px; /* Padding around the section */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 20px auto; /* Center and space the section */
-    max-width: 800px; /* Limit the width */
-}
-
-.about-me-section h2 {
-    font-size: 28px; /* Size of the heading */
-    font-weight: bold; /* Bold heading */
-    text-align: center; /* Center align the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #333; /* Dark gray for heading */
-}
-
-.about-me-section p {
-    font-size: 16px; /* Standard readable font size */
-    line-height: 1.6; /* Comfortable line spacing */
-    color: #555; /* Medium gray text color */
-    margin-bottom: 15px; /* Spacing between paragraphs */
-    text-align: justify; /* Justify text for a polished look */
-}
