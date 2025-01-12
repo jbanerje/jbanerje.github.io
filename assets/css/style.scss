@@ -42,20 +42,19 @@ header {
 .about-me {
     color: black; /* Ensures the font color is black */
     font-family: Helvetica, Arial, sans-serif; /* Sets the font to Helvetica */
-    font-size: 16px; /* Standard font size for readability */
+    font-size: 12px; /* Standard font size for readability */
     line-height: 1.6; /* Line height for better readability */
     margin: 20px auto; /* Center align the div with some spacing */
     max-width: 800px; /* Optional: Restrict width for a clean layout */
 }
 
 .about-me h2 {
-    font-size: 28px; /* Size for the heading */
+    font-size: 20px; /* Size for the heading */
     font-weight: bold; /* Bold font for heading */
     text-align: center; /* Center-align the heading */
-    margin-bottom: 15px; /* Space below the heading */
+    margin-bottom: 5px; /* Space below the heading */
 }
 
 .about-me p {
-    margin-bottom: 15px; /* Space between paragraphs */
-    text-align: justify; /* Justify text for a neat appearance */
+    text-align: left; /* Justify text for a neat appearance */
 }
