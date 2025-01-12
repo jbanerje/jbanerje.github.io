@@ -1,4 +1,9 @@
-## Technical Skills: 
+## About Me
+
+With 15+ years of experience as a Strategic Data Science Leader, I specialize in leveraging AI, Machine Learning, and advanced analytics to drive business impact for Fortune 500 companies. My expertise spans forecasting, product recommendations, inventory optimization, marketing analytics, and Large Language Models (LLMs), with a proven track record of delivering high-performing solutions across industries like Cards & Payments and Healthcare Manufacturing & Supply Chain.
+
+## Technical Skills 
+
 Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (LLM), Linear Programming, Forecasting
 
 ## Education
@@ -9,6 +14,7 @@ Python, R, SQL, Azure, Databricks, Machine Learning, Large Language Modelling (L
 - Deep Learning Specialization, Coursera
 
 ## Work Experience
+
 **Principal Data Scientist @ Stryker Corp (_March 2022 - Present_)**
  - Currently leading a data science team in the development of an end-to-end AI-based demand planning system using Azure Infrastructure.
  - Implemented a Customer Recommendation \& Product Association application across multiple divisions, enhancing customer purchasing behavior insights and enabling personalized recommendations, resulting in increased cross-selling of products.
