@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jagannath Banerjee'e Portfolio</title>
+    <title>Jagannath Banerjee Portfolio</title>
     <link rel="icon" href="/assets/img/jagannath-banerjee.png" type="image/x-icon">
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="wrapper">
       <header>
+        <p class="eyebrow">Technology Leadership Portfolio</p>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <p class="hero-role">{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="hero-summary">Building production AI, analytics strategy, and enterprise data products that deliver measurable business value.</p>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
-        <!--p>{{ site.description | default: site.github.project_tagline }}</p-->
-        <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -43,9 +43,22 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
+        <div class="header-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="mailto:jagannath.banerjee@gmail.com">Contact</a>
+        </div>
+
+        <nav class="quick-nav" aria-label="Section navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#case-study">Case Study</a>
+        </nav>
+
         <div class="social-icons">         
                 
-            <a href="https://www.linkedin.com/in/jagannath-banerjee/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/jagannath-banerjee/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
 
@@ -53,26 +66,29 @@
                 <i class="fas fa-envelope"></i>
             </a>
             
-            <a href="https://medium.com/@jagannath.banerjee" target="_blank" aria-label="Medium Blog">
+            <a href="https://medium.com/@jagannath.banerjee" target="_blank" rel="noopener noreferrer" aria-label="Medium Blog">
                 <i class="fab fa-medium"></i>
             </a>
         
-            <a href="https://github.com/jbanerje" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/jbanerje" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fab fa-github"></i>
             </a>
         </div>
-        <div class="container about-me">
-            <p class="highlight">
-                I'm passionate about mentoring aspiring data scientists and exploring the latest advancements in AI. Let's connect and see how we can drive innovation together!
-            </p>            
-        </div>        
       </header>
-      <section class="readme-content">
+      <section class="readme-content" id="main-content">
 
       {{ content }}
 
       </section>
       <footer>
+        <p><strong>{{ site.title | default: site.github.repository_name }}</strong> - Data Science and AI Leadership Portfolio</p>
+        <p>
+          <a href="#about">About</a> |
+          <a href="#experience">Experience</a> |
+          <a href="#projects">Projects</a> |
+          <a href="#case-study">Case Study</a>
+        </p>
+        <p>Connect on <a href="https://www.linkedin.com/in/jagannath-banerjee/" target="_blank" rel="noopener noreferrer">LinkedIn</a> or <a href="mailto:jagannath.banerjee@gmail.com">Email</a>.</p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

@@ -1,118 +1,331 @@
 ---
 ---
 @import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+    --bg-start: #f4f7ff;
+    --bg-end: #e8effc;
+    --surface: #ffffff;
+    --surface-2: #f9fbff;
+    --text: #111827;
+    --muted: #4b5563;
+    --line: #dbe3f0;
+    --primary: #0f4aa3;
+    --primary-strong: #0a3678;
+    --accent: #00a3a3;
+    --shadow-soft: 0 10px 30px rgba(20, 40, 90, 0.08);
+    --shadow-card: 0 16px 26px rgba(20, 40, 90, 0.08);
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+    --space-1: 0.35rem;
+    --space-2: 0.65rem;
+    --space-3: 1rem;
+    --space-4: 1.4rem;
+    --space-5: 2rem;
+    --space-6: 2.8rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at top right, #d8e6ff 0, transparent 35%), linear-gradient(180deg, var(--bg-start), var(--bg-end));
+    margin: 0;
+}
+
+.skip-link {
+    position: absolute;
+    top: -42px;
+    left: var(--space-3);
+    background: var(--text);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    padding: var(--space-2) var(--space-3);
+    z-index: 999;
+}
+
+.skip-link:focus {
+    top: var(--space-3);
+}
+
+.wrapper {
+    width: min(1160px, 96vw);
+    margin: var(--space-5) auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background: var(--surface);
+}
+
 header {
-    img {
-      border-radius: 50%;
-    }
-    p {
-      text-align: left;
-    }
-    p.view {
-      text-align: left;
-    }
-  }
+    background: linear-gradient(160deg, #09244d 0%, #113f84 56%, #12698f 100%);
+    color: #f9fbff;
+    padding: var(--space-5) clamp(1rem, 2vw, 2rem);
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+    font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+    letter-spacing: 0.01em;
+}
+
+header h1 a,
+header h1 a:hover,
+header h1 a:visited {
+    color: #fff;
+}
+
+header img {
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.eyebrow {
+    margin: 0 0 var(--space-1);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+.hero-role {
+    margin: var(--space-2) 0 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.hero-summary {
+    margin: var(--space-2) 0 var(--space-4);
+    color: #e3eeff;
+    max-width: 34ch;
+    line-height: 1.5;
+}
+
+.header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-4);
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    font-size: 0.97rem;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #062832;
+}
+
+.btn-primary:hover {
+    background: #00bdbd;
+    color: #032027;
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #f8fcff;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+.quick-nav a {
+    color: #d8e9ff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.9rem;
+}
+
+.quick-nav a:hover {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
 
 .social-icons {
-    display: flex; /* Arrange items in a row */
-    justify-content: left; /* Center the icons horizontally */
-    gap: 30px; /* Increase spacing between the icons */
-    padding: 20px 0; /* Optional padding for spacing */
+    display: flex;
+    gap: var(--space-3);
+    padding-top: var(--space-2);
 }
 
 .social-icons a {
     text-decoration: none;
-    color: #333; /* Default icon color */
-    font-size: 2em; /* Increase icon size */
-    transition: color 0.3s ease, transform 0.3s ease;
+    color: #f2f7ff;
+    font-size: 1.5rem;
+    transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .social-icons a:hover {
-    color: #0077b5; /* Example hover color (LinkedIn blue) */
-    transform: scale(1.2); /* Add a slight zoom effect on hover */
+    color: #7ae8ff;
+    transform: translateY(-2px);
 }
 
-.site-description {
-    color: black; /* Change text color to black */
-    font-size: 1.2em; /* Optional: Adjust font size */
-    font-weight: normal; /* Optional: Adjust font weight */
-    margin: 10px 0; /* Optional: Add spacing */
-}
-
-.about-me {
-    color: black; /* Ensures the font color is black */
-    font-family: 'Open Sans', Arial, sans-serif; /* Sets the font to Helvetica */
-    font-size: 14px; /* Standard font size for readability */
-    line-height: 1.6; /* Line height for better readability */
-    margin: 20px auto; /* Center align the div with some spacing */
-    max-width: 800px; /* Optional: Restrict width for a clean layout */
-}
-
-.about-me h2 {
-    font-size: 20px; /* Size for the heading */
-    font-weight: bold; /* Bold font for heading */
-    text-align: center; /* Center-align the heading */
-    margin-bottom: 5px; /* Space below the heading */
-}
-
-.about-me p {
-    text-align: left; /* Justify text for a neat appearance */
-}
-
-/* Standout paragraph styling */
-p.highlight {
-    font-family: 'Open Sans', Arial, sans-serif; /* Use Open Sans for clean typography */
-    font-size: 18px; /* Slightly larger text for emphasis */
-    font-weight: 700; /* Bold text */
-    color: #1d3557; /* Dark navy blue for a professional look */
-    line-height: 1.8; /* Comfortable line spacing */
-    background-color: #f1faee; /* Soft light green for contrast */
-    padding: 15px 20px; /* Add padding for text spacing */
-    border-left: 6px solid #457b9d; /* Add a left accent border */
-    border-radius: 8px; /* Smooth, rounded corners */
-    margin: 20px 0; /* Add spacing above and below the paragraph */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: left; /* Left-align text for readability */
-}
-
-/* General styling for the readme section */
 .readme-content {
-    font-family: 'Open Sans', Arial, sans-serif; /* Font for all text */
-    color: black; /* Default text color */
-    line-height: 1.8; /* Comfortable line spacing */
-    margin: 20px 0; /* Add spacing around the section */
+    color: var(--text);
+    line-height: 1.7;
+    margin: 0;
+    padding: var(--space-5) clamp(1rem, 3vw, 2.3rem) var(--space-6);
+    background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface) 100%);
 }
 
-/* Styling for headings (##) */
+.readme-content section {
+    margin: 0 0 var(--space-6);
+}
+
 .readme-content h2 {
-    color: #1d3557; /* Navy blue for headings */
-    font-size: 24px; /* Larger font size for emphasis */
-    font-weight: 700; /* Bold text */
-    margin-top: 20px; /* Spacing above headings */
-    margin-bottom: 10px; /* Spacing below headings */
+    margin-bottom: var(--space-3);
+    font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+    font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+    letter-spacing: 0.01em;
+    color: var(--primary-strong);
 }
 
-/* Styling for h3 (###) headings */
 .readme-content h3 {
-    color: black; /* Black color for h3 headings */
-    font-size: 20px; /* Slightly smaller than h2 */
-    font-weight: 700; /* Bold for emphasis */
-    margin-top: 15px; /* Spacing above */
-    margin-bottom: 10px; /* Spacing below */
-}
-/* Styling for paragraph content */
-.readme-content p {
-    color: black; /* Black text for content */
-    font-size: 16px; /* Standard readable size */
-    margin-bottom: 15px; /* Spacing between paragraphs */
+    margin: 0 0 var(--space-2);
+    color: #0c2f64;
+    font-size: 1.18rem;
 }
 
-/* Styling for list items */
+.readme-content p,
+.readme-content li {
+    font-size: 1.03rem;
+    color: var(--text);
+}
+
 .readme-content ul {
-    color: black; /* Black text for list items */
-    font-size: 16px; /* Standard readable size */
-    margin-left: 20px; /* Indentation for lists */
-    margin-bottom: 15px; /* Spacing below lists */
-    list-style-type: disc; /* Default bullet points */
+    margin-top: 0;
+    margin-bottom: var(--space-4);
+}
+
+.impact-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.metric-item {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
+    box-shadow: var(--shadow-soft);
+}
+
+.metric-item h3 {
+    margin: 0;
+    color: var(--primary);
+    font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+    font-size: 1.4rem;
+}
+
+.metric-item p {
+    margin: var(--space-1) 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.project-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 30px rgba(20, 40, 90, 0.12);
+}
+
+.project-card p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: #0a376f;
+}
+
+a:focus-visible,
+.btn:focus-visible,
+.quick-nav a:focus-visible {
+    outline: 3px solid #58d4d4;
+    outline-offset: 2px;
+}
+
+footer {
+    border-top: 1px solid var(--line);
+    background: #f4f8ff;
+    padding: var(--space-4) clamp(1rem, 3vw, 2.3rem);
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+footer p {
+    margin: 0 0 var(--space-2);
+}
+
+@media (max-width: 1050px) {
+    .wrapper {
+        width: 97vw;
+    }
+
+    .impact-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        text-align: left;
+    }
+
+    .social-icons {
+        gap: var(--space-2);
+    }
+
+    .impact-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .readme-content {
+        padding: var(--space-4) 1rem var(--space-5);
+    }
 }
 
