@@ -1,5 +1,35 @@
 theme: jekyll-theme-minimal
 title: Jagannath Banerjee
-description: Principal Data Scientist | AI and Analytics Strategy Leader
+description: Strategic Data Science Leader & AI Innovation Expert
 logo: /assets/img/jagannath-banerjee.png
 show_downloads: false
+
+# Additional metadata for better SEO and social sharing
+author: Jagannath Banerjee
+email: jagannath.banerjee@gmail.com
+github_username: jbanerje
+linkedin_username: jagannath-banerjee
+medium_username: jagannath.banerjee
+
+# Site configuration
+lang: en-US
+url: https://jbanerje.github.io
+permalink: /:slug/
+timezone: America/Chicago
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
