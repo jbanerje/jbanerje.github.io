@@ -1,595 +1,118 @@
 ---
 ---
 @import "{{ site.theme }}";
-
-/* ===== Color Palette ===== */
-$primary-dark: #0f172a;      /* Deep navy */
-$primary-accent: #2563eb;    /* Professional blue */
-$accent-light: #3b82f6;      /* Lighter blue for hover states */
-$secondary-accent: #60a5fa;  /* Softer blue */
-$text-primary: #1e293b;      /* Dark slate for main text */
-$text-secondary: #64748b;    /* Muted slate for secondary text */
-$text-light: #94a3b8;        /* Light slate for tertiary text */
-$bg-light: #f8fafc;          /* Off-white background */
-$bg-lighter: #f1f5f9;        /* Even lighter background */
-$border-color: #e2e8f0;      /* Light borders */
-$success-color: #10b981;     /* Green accent */
-$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
-$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-
-/* ===== Typography ===== */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: $text-primary;
-  line-height: 1.6;
-  background-color: #ffffff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  color: $primary-dark;
-}
-
-h1 {
-  font-size: 2.5rem;
-  letter-spacing: -0.02em;
-  
-  @media (max-width: 768px) {
-    font-size: 2rem;
-  }
-}
-
-h2 {
-  font-size: 1.875rem;
-  letter-spacing: -0.01em;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-}
-
-h3 {
-  font-size: 1.375rem;
-  color: $text-primary;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-}
-
-p {
-  margin-bottom: 1rem;
-  color: $text-primary;
-  font-size: 1rem;
-  line-height: 1.75;
-}
-
-/* ===== Header / Hero Section ===== */
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.header {
-  padding: 3rem 0;
-  border-bottom: 1px solid $border-color;
-  margin-bottom: 3rem;
-}
-
-.header-content {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3rem;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-}
-
-.header-intro {
-  flex: 1;
-}
-
-.page-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: $primary-dark;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: -0.02em;
-
-  @media (max-width: 768px) {
-    font-size: 2rem;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: $primary-accent;
+header {
+    img {
+      border-radius: 50%;
+    }
+    p {
+      text-align: left;
+    }
+    p.view {
+      text-align: left;
     }
   }
-}
 
-.tagline {
-  font-size: 1.25rem;
-  color: $text-secondary;
-  margin: 0.5rem 0 1.5rem 0;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-.header-image {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: $shadow-lg;
-  border: 2px solid $border-color;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-  }
-
-  @media (max-width: 768px) {
-    width: 160px;
-    height: 160px;
-  }
-}
-
-/* ===== Social Icons ===== */
 .social-icons {
-  display: flex;
-  gap: 1rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
+    display: flex; /* Arrange items in a row */
+    justify-content: left; /* Center the icons horizontally */
+    gap: 30px; /* Increase spacing between the icons */
+    padding: 20px 0; /* Optional padding for spacing */
 }
 
-.social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $bg-light;
-  color: $text-primary;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-
-  &:hover {
-    background-color: $primary-accent;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: $shadow-md;
-  }
-
-  &:focus {
-    outline: 2px solid $primary-accent;
-    outline-offset: 2px;
-  }
-
-  i {
-    font-size: 1.25rem;
-  }
-}
-
-/* ===== Hero CTA ===== */
-.hero-cta {
-  background: linear-gradient(135deg, $bg-light 0%, $bg-lighter 100%);
-  border: 1px solid $border-color;
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-
-  @media (max-width: 768px) {
-    padding: 1.5rem;
-  }
-}
-
-.hero-message {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: $text-primary;
-  margin: 0;
-  font-weight: 500;
-  max-width: 90ch;
-}
-
-/* ===== Repository Link ===== */
-.repo-link {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: $primary-accent;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-bottom: 2rem;
-
-  a {
-    color: inherit;
+.social-icons a {
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    &:hover {
-      gap: 0.75rem;
-
-      .icon {
-        transform: translateX(2px);
-      }
-    }
-  }
-
-  .icon {
-    transition: transform 0.3s ease;
-  }
+    color: #333; /* Default icon color */
+    font-size: 2em; /* Increase icon size */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* ===== Main Content ===== */
-.main-content {
-  padding: 2rem 0;
+.social-icons a:hover {
+    color: #0077b5; /* Example hover color (LinkedIn blue) */
+    transform: scale(1.2); /* Add a slight zoom effect on hover */
 }
 
-/* ===== Content Styling ===== */
+.site-description {
+    color: black; /* Change text color to black */
+    font-size: 1.2em; /* Optional: Adjust font size */
+    font-weight: normal; /* Optional: Adjust font weight */
+    margin: 10px 0; /* Optional: Add spacing */
+}
+
+.about-me {
+    color: black; /* Ensures the font color is black */
+    font-family: 'Open Sans', Arial, sans-serif; /* Sets the font to Helvetica */
+    font-size: 14px; /* Standard font size for readability */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 20px auto; /* Center align the div with some spacing */
+    max-width: 800px; /* Optional: Restrict width for a clean layout */
+}
+
+.about-me h2 {
+    font-size: 20px; /* Size for the heading */
+    font-weight: bold; /* Bold font for heading */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 5px; /* Space below the heading */
+}
+
+.about-me p {
+    text-align: left; /* Justify text for a neat appearance */
+}
+
+/* Standout paragraph styling */
+p.highlight {
+    font-family: 'Open Sans', Arial, sans-serif; /* Use Open Sans for clean typography */
+    font-size: 18px; /* Slightly larger text for emphasis */
+    font-weight: 700; /* Bold text */
+    color: #1d3557; /* Dark navy blue for a professional look */
+    line-height: 1.8; /* Comfortable line spacing */
+    background-color: #f1faee; /* Soft light green for contrast */
+    padding: 15px 20px; /* Add padding for text spacing */
+    border-left: 6px solid #457b9d; /* Add a left accent border */
+    border-radius: 8px; /* Smooth, rounded corners */
+    margin: 20px 0; /* Add spacing above and below the paragraph */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Left-align text for readability */
+}
+
+/* General styling for the readme section */
 .readme-content {
-  h2 {
-    position: relative;
-    padding-bottom: 0.75rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(to right, $primary-accent, $accent-light);
-      border-radius: 2px;
-    }
-  }
-
-  h3 {
-    color: $primary-dark;
-    font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  strong {
-    font-weight: 700;
-    color: $primary-dark;
-  }
-
-  em {
-    font-style: italic;
-    color: $text-secondary;
-  }
-
-  /* Work Experience & Project Titles */
-  strong + em {
-    display: block;
-    font-size: 0.95rem;
-    margin-top: 0.25rem;
-    margin-bottom: 0.75rem;
-  }
-
-  ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    list-style-type: disc;
-
-    li {
-      margin-bottom: 0.75rem;
-      color: $text-primary;
-      line-height: 1.7;
-    }
-  }
-
-  ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    list-style-type: decimal;
-
-    li {
-      margin-bottom: 0.75rem;
-      color: $text-primary;
-      line-height: 1.7;
-    }
-  }
-
-  a {
-    color: $primary-accent;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-      border-bottom-color: $primary-accent;
-      color: $accent-light;
-    }
-
-    &:focus {
-      outline: 2px solid $primary-accent;
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-  }
+    font-family: 'Open Sans', Arial, sans-serif; /* Font for all text */
+    color: black; /* Default text color */
+    line-height: 1.8; /* Comfortable line spacing */
+    margin: 20px 0; /* Add spacing around the section */
 }
 
-/* ===== Section Containers ===== */
-.education-section,
-.experience-section,
-.projects-section,
-.case-study-section {
-  margin: 3rem 0;
-
-  h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-
-    &::before {
-      content: '';
-      width: 4px;
-      height: 1.5em;
-      background-color: $primary-accent;
-      border-radius: 2px;
-    }
-  }
+/* Styling for headings (##) */
+.readme-content h2 {
+    color: #1d3557; /* Navy blue for headings */
+    font-size: 24px; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold text */
+    margin-top: 20px; /* Spacing above headings */
+    margin-bottom: 10px; /* Spacing below headings */
 }
 
-/* ===== Project/Experience Card Styling ===== */
-.project-entry,
-.experience-entry {
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background-color: $bg-light;
-  border-radius: 8px;
-  border: 1px solid $border-color;
-  transition: all 0.3s ease;
-
-  &:hover {
-    border-color: $primary-accent;
-    box-shadow: $shadow-md;
-    transform: translateY(-2px);
-  }
-
-  h4 {
-    font-size: 1.25rem;
-    margin: 0 0 0.25rem 0;
-    color: $primary-dark;
-  }
-
-  .subtitle {
-    font-size: 0.95rem;
-    color: $text-secondary;
-    font-style: italic;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-
-  ul {
-    margin-left: 1.5rem;
-
-    li {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      margin-bottom: 0.5rem;
-    }
-  }
+/* Styling for h3 (###) headings */
+.readme-content h3 {
+    color: black; /* Black color for h3 headings */
+    font-size: 20px; /* Slightly smaller than h2 */
+    font-weight: 700; /* Bold for emphasis */
+    margin-top: 15px; /* Spacing above */
+    margin-bottom: 10px; /* Spacing below */
+}
+/* Styling for paragraph content */
+.readme-content p {
+    color: black; /* Black text for content */
+    font-size: 16px; /* Standard readable size */
+    margin-bottom: 15px; /* Spacing between paragraphs */
 }
 
-/* ===== Links Container ===== */
-.project-links,
-.case-study-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    color: $primary-accent;
-    border: 1px solid $primary-accent;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: $primary-accent;
-      color: white;
-    }
-
-    &:focus {
-      outline: 2px solid $primary-accent;
-      outline-offset: 2px;
-    }
-  }
+/* Styling for list items */
+.readme-content ul {
+    color: black; /* Black text for list items */
+    font-size: 16px; /* Standard readable size */
+    margin-left: 20px; /* Indentation for lists */
+    margin-bottom: 15px; /* Spacing below lists */
+    list-style-type: disc; /* Default bullet points */
 }
 
-/* ===== About/Highlight Box ===== */
-.highlight-box {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(96, 165, 250, 0.05) 100%);
-  border-left: 4px solid $primary-accent;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border: 1px solid $border-color;
-}
-
-.highlight-box p {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: $text-primary;
-  font-weight: 500;
-  margin: 0;
-}
-
-/* ===== Footer ===== */
-.footer {
-  margin-top: 4rem;
-  padding: 2rem 0;
-  border-top: 1px solid $border-color;
-  text-align: center;
-}
-
-.footer-text {
-  color: $text-secondary;
-  font-size: 0.95rem;
-  margin: 0;
-}
-
-/* ===== Responsive Tables ===== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-
-  th {
-    background-color: $bg-light;
-    padding: 1rem;
-    text-align: left;
-    font-weight: 700;
-    color: $primary-dark;
-    border-bottom: 2px solid $border-color;
-  }
-
-  td {
-    padding: 1rem;
-    border-bottom: 1px solid $border-color;
-  }
-
-  tr:hover {
-    background-color: $bg-lighter;
-  }
-}
-
-/* ===== Code Blocks ===== */
-code {
-  background-color: $bg-light;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-family: 'Monaco', 'Courier New', monospace;
-  font-size: 0.9em;
-  color: #d73a49;
-}
-
-pre {
-  background-color: $primary-dark;
-  color: #f0f0f0;
-  padding: 1.5rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  margin: 1.5rem 0;
-  line-height: 1.5;
-
-  code {
-    background-color: transparent;
-    color: inherit;
-    padding: 0;
-  }
-}
-
-/* ===== Blockquotes ===== */
-blockquote {
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
-  border-left: 4px solid $primary-accent;
-  color: $text-secondary;
-  font-style: italic;
-}
-
-/* ===== Horizontal Rules ===== */
-hr {
-  margin: 2rem 0;
-  border: none;
-  border-top: 1px solid $border-color;
-}
-
-/* ===== Focus Visible for Accessibility ===== */
-:focus-visible {
-  outline: 2px solid $primary-accent;
-  outline-offset: 2px;
-}
-
-/* ===== Reduced Motion Support ===== */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* ===== Print Styles ===== */
-@media print {
-  body {
-    background-color: white;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  .social-icons,
-  .repo-link {
-    display: none;
-  }
-}
